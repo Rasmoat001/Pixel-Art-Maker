@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jscolor.min.js"></script>
+</head>
+<body>
+    <marquee>
+<h1><span style="color: black">L</span><span style="color: black" >a</span><span style="color: black">b</span>
+    <span style="color: black">:-</span> <span style="color: white ">P</span><span style="color:white">i</span>
+    <span style="color: red">x</span><span style="color: red">e</span><span style="color: red">l</span>
+    <span style="color: red ">A</span><span style="color: white">r</span><span style="color: white">t</span>
+    <span style="color:green">M</span><span style="color: green">a</span><span style="color: green">k</span>
+    <span style="color: green">e</span><span style="color: green">r</span></h1>
+    </marquee>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" max="50" value="1">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" max="50" value="1"><br>
+        <br>
+        <button id="submit" type="button" onclick="makeGrid()">Submit</button>
+        <button type="reset" onclick="backUp()">Reset</button>
+    </form>
+<div class="" id="error"></div>
+    <h2>Pick A Color</h2>
+<input type="color" id="colorPicker" value="#FFFFFF">
+
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"> <!--aka grid container-->
+    </table>
+    <br>
+    <script src="designs.js"></script>
+    <marquee>
+            <h1><span style="color: black">B</span><span style="color: black" >y</span><span style="color: white">:</span>
+                <span style="color: white">-</span> <span style="color: red ">R</span><span style="color:red">a</span>
+                <span style="color: white">s</span><span style="color: white">h</span><span style="color:green">i</span>
+                <span style="color: green ">d</span></h1>
+                </marquee>
+</body>
+</html>
